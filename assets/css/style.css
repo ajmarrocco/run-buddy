@@ -2,7 +2,9 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
   }
+
 /* apply styles to <header> */
 header {
     padding: 20px 35px;
@@ -46,4 +48,31 @@ header a {
 body {
     color: #39a6b2;
     font-family: Helvetica, Arial, sans-serif;
+  }
+
+/* adds background color to footer */
+footer {
+    background: #fce138;
+    width: 100%;
+    padding: 40px 35px;
+  }
+
+/* adds font color and size to footer */
+footer h2 {
+    display: inline;
+    color: #024e76;
+    font-size: 30px;
+    margin: 0;
+  }
+
+/* adds color to anchor in footer */
+footer div {
+    float: right;
+    line-height: 1.5;
+    text-align: right;
+  }
+
+/* adds color to anchor in footer */
+footer a {
+    color: #024e76;
   }
