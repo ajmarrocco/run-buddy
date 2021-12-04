@@ -1,0 +1,49 @@
+/* no margin or border */
+* {
+    margin: 0;
+    padding: 0;
+  }
+/* apply styles to <header> */
+header {
+    padding: 20px 35px;
+    background-color: #39a6b2;
+  }
+
+/* h1 color */
+header h1 {
+    font-weight: bold;
+    font-size: 36px;
+    color: #fce138;
+    margin: 0;
+    display: inline;
+  }
+  
+/* a color */
+header a {
+    text-decoration: none;
+    color: #fce138;
+  }
+
+/* move nav to the right side, 7 px form top and bottom and 0 left and right */
+  header nav {
+    float: right;
+    margin: 7px 0; 
+  }
+
+/* allows nav ul and li to take up the space that it needs*/
+  header nav ul li {
+    display: inline;
+  }
+
+/* Changes the text and position of the anchors in the ul and li for the nav   */
+  header nav ul li a {
+    margin: 0 30px;
+    font-weight: lighter;
+    font-size: 22px;
+  }
+
+/* more on this crazy alphanumerical value in a minute! */  
+body {
+    color: #39a6b2;
+    font-family: Helvetica, Arial, sans-serif;
+  }
