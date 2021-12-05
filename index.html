@@ -34,6 +34,41 @@
   
         <!-- hero/jumbotron -->
         <section>
+            <div>
+                <h3>Get Started Today</h3>
+                <p>Fill out this form and one of our trainers will schedule a consult</p>
+            <!-- Add form element -->
+                <form>
+                    <!-- Name input -->
+                    <label for="name">Enter Full Name:</label>
+                    <input type="text" placeholder="Your Name" name="name" id="name" />
+                    <!-- Email input -->
+                    <label for="email">Enter email address:</label>
+                    <input type="email" placeholder="Email Address" name="email" id="email" />
+                    <!-- Phone number input -->
+                    <label for="phone">Enter a telephone number:</label>
+                    <input type="tel" placeholder="Phone Number" name="phone" id="phone" />
+                    <!-- Trainer input with radio button -->
+                    <p>
+                        Have you worked out with a trainer before?
+                        <!-- Yes button -->
+                        <input type="radio" name="trainer-confirm" id="trainer-yes"/>
+                        <label for="trainer-yes">Yes</label>
+                        <!-- No button -->
+                        <input type="radio" name="trainer-confirm" id="trainer-no"/>
+                        <label for="trainer-no">No</label>                       
+                    </p>
+                    <p>
+                        <!-- 18 consent -->
+                        <label for="eighteen">I acknowledge that I am at least 18 years of age.</label>
+                        <input type="checkbox" name="eighteen" id="eighteen" value="eighteen"/>
+                    </p>
+                    <!-- Submit button -->
+                    <button type="submit">
+                        Get running!
+                    </button>                  
+                </form>
+            </div>
         </section>
   
         <!-- "what we do" section -->
