@@ -52,16 +52,16 @@ header nav ul li a {
 /* Adds padding to all sections */
 section {
   padding: 60px;
-}
-/* Hero Style Start */
+ }
+/* Hero Style Begins*/
 .hero{
   background-image: url("../images/hero-bg.jpg");
   height: 600px;
   background-size: cover;
   background-position: center;
-}
-/* Hero Style End */
-/* Hero Form Style Start */
+  position: relative;
+ }
+/* Hero Form Style */
 .hero-form{
   background-color: #fce138;
   padding: 20px;
@@ -70,8 +70,53 @@ section {
   border-style: solid;
   border-width: 3px;
   border-color: #024e76;
-}
-/* Hero Form End */
+  position: absolute;
+  bottom: 120px;
+  right: 140px; 
+ }
+/* Change text for h3 */
+.hero-form h3{
+  font-size: 24px;
+  margin: 0px;
+ }
+/* Spacing for p in hero-form */
+.hero-form p {
+  margin: 5px 0 15px 0;
+ }
+/* Spacing and styling for p in hero-form */
+ .form-input {
+  border: 1px solid #024e76;
+  display: block;
+  padding: 7px 15px;
+  font-size: 16px;
+  color: #024e76;
+  width: 100%;
+  margin-bottom: 15px;
+ }
+/* Spacing for radio buttons */
+.hero-form label {
+  margin: 0 5px;
+ }
+/* Style submit button */
+.hero-form button {
+  color: #fce138;
+  background-color: #024e76;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+ }
+/* Hero Style Begins*/
+/* Trainers style
+.trainers {
+  text-align: center;
+ }  */
+/* Trainer style */
+/* .trainer {
+  width: 900px;
+  margin: 0 auto 30px auto;
+  background: #024e76;
+  color: #fce138;
+ }   */
 /* adds background color to footer */
 footer {
     background: #fce138;
