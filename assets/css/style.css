@@ -53,6 +53,23 @@ header nav ul li a {
 section {
   padding: 60px;
 }
+/* Styles title to all sections */
+.section-title {
+  font-size: 55px;
+  color: #024e76;
+  margin-bottom: 35px;
+  padding: 0 100px 20px 100px;
+  display: inline-block;
+  border-bottom: 3px solid;
+}
+/* Primary border style */
+.primary-border {
+  border-color: #fce138;
+}
+/* Secondary border style */
+.secondary-border {
+  border-color: #39a6b2;
+}
 /* Hero Style Begins*/
 .hero{
   background-image: url("../images/hero-bg.jpg");
@@ -84,7 +101,7 @@ section {
   margin: 5px 0 15px 0;
 }
 /* Spacing and styling for p in hero-form */
- .form-input {
+.form-input {
   border: 1px solid #024e76;
   display: block;
   padding: 7px 15px;
@@ -109,16 +126,6 @@ section {
 .intro{
   text-align: center;
 }
- /* Style h2 in intro */
-.intro h2 {
-  font-size: 55px;
-  color: #024e76;
-  margin-bottom: 35px;
-  padding: 0 100px 20px 100px;
-  border-bottom: 3px solid;
-  border-color: #fce138;
-  display: inline-block;
-}
  /* Style p in intro */
 .intro p {
   line-height: 1.7;
@@ -127,25 +134,41 @@ section {
   font-size: 20px;
   margin: 0 auto;
 }
-/* Hero Style Begins*/
-/* Trainers style
-.trainers {
+/* Style steps */
+.steps {
   text-align: center;
- }  */
-/* Trainer style */
-/* .trainer {
-  width: 900px;
-  margin: 0 auto 30px auto;
-  background: #024e76;
-  color: #fce138;
- }   */
+  background: #fce138;
+}
+/* Margin for steps div*/
+.steps div {
+  margin-bottom: 80px;
+}
+/* Decrases size of SVG file */
+.steps img {
+  width: 15%;
+  margin: 10px 0;
+}
+/* Style steps h3*/
+.steps h3 {
+  color: #024e76;
+  font-size: 46px;
+  margin-top: 10px;
+}
+/* Style steps paragraph */
+.steps p {
+  color: #39a6b2;
+  font-size: 23px;
+}
+/* Makes font a different size than the step */
+.steps span {
+  font-size: 38px;
+}
 /* adds background color to footer */
 footer {
   background: #fce138;
   width: 100%;
   padding: 40px 35px;
 }
-
 /* adds font color and size to footer */
 footer h2 {
   display: inline;
@@ -153,14 +176,12 @@ footer h2 {
   font-size: 30px;
   margin: 0;
 }
-
 /* adds color to anchor in footer */
 footer div {
   float: right;
   line-height: 1.5;
   text-align: right;
 }
-
 /* adds color to anchor in footer */
 footer a {
   color: #024e76;
