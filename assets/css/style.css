@@ -39,16 +39,20 @@ header nav {
   margin: 7px 0; 
 }
 
-/* allows nav ul and li to take up the space that it needs*/
-header nav ul li {
-  display: inline;
+/* allows nav ul to take up the space that it needs*/
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
 }
 
 /* Changes the text and position of the anchors in the ul and li for the nav   */
 header nav ul li a {
   margin: 0 30px;
   font-weight: lighter;
-  font-size: 22px;
+  font-size: 1.55vw;
 }
 
 /* Adds padding to all sections */
