@@ -64,10 +64,11 @@ section {
 .section-title {
   font-size: 55px;
   color: #024e76;
-  margin-bottom: 35px;
-  padding: 0 100px 20px 100px;
-  display: inline-block;
   border-bottom: 3px solid;
+  padding-bottom: 20px;
+  text-align: center;
+  margin: 0 auto 35px auto;
+  width: 50%;
 }
 
 /* Primary border style */
@@ -155,11 +156,6 @@ section {
   font-size: 16px;
 }
 
-/* Style intro */
-.intro{
-  text-align: center;
-}
-
  /* Style p in intro */
 .intro p {
   line-height: 1.7;
@@ -167,23 +163,12 @@ section {
   width: 80%;
   font-size: 20px;
   margin: 0 auto;
+  text-align: center;
 }
 
 /* Style steps */
 .steps {
-  text-align: center;
   background: #fce138;
-}
-
-/* Margin for steps div*/
-.steps div {
-  margin-bottom: 80px;
-}
-
-/* Decrases size of SVG file */
-.steps img {
-  width: 15%;
-  margin: 10px 0;
 }
 
 /* Style steps h3*/
@@ -191,22 +176,64 @@ section {
   color: #024e76;
   font-size: 46px;
   margin-top: 10px;
+  /* flex: 1 30%; */
 }
 
-/* Style steps paragraph */
-.steps p {
+/* Styles step */
+.step {
+  margin: 50px auto;
+  padding-bottom: 50px;
+  width: 80%;
+  border-bottom: 1px solid #39a6b2;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Style step-text paragraph */
+.step-text p {
   color: #39a6b2;
-  font-size: 23px;
+  font-size: 18px;
 }
 
-/* Makes font a different size than the step */
-.steps span {
-  font-size: 38px;
+/* Style step h3*/
+.step h3 {
+  /* color: #024e76;
+  font-size: 46px;
+  margin-top: 10px; */
+  flex: 1 30%;
 }
 
-/* Centers text of trainers section */
-.trainers {
-  text-align: center;
+/* Style step-info */
+.step-info {
+  flex: 2 70%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/* Style step-img */
+.step-img {
+  flex: 1 12%;
+  margin-right: 20px;
+}
+
+/* Style step-img img */
+.step-img img {
+  max-width: 100%;
+}
+
+/* Style step-text */
+.step-text {
+  flex: 12;
+}
+
+/* Style h4 in step-text paragraph */
+.step-text h4 {
+  font-size: 26px;
+  line-height: 1.5;
+  color: #024e76;
 }
 
 /* Styles trainer section */
@@ -262,7 +289,6 @@ section {
 
 /* Contact style in Reach out */
 .contact {
-  text-align: center;
   background: #024e76;
 }
 
@@ -332,4 +358,9 @@ footer div {
 /* adds color to anchor in footer */
 footer a {
   color: #024e76;
+}
+
+/* Displays flex rows */
+.flex-row {
+  display: flex;
 }
