@@ -18,6 +18,14 @@ header {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-image: url("../images/hero-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-position: 80%;
 }
 
 /* h1 color */
@@ -55,6 +63,13 @@ header nav ul li a {
   font-size: 1.55vw;
 }
 
+header nav ul li a:hover {
+  background: #fce138;
+  color: #024e76;
+  border-radius: 15px;
+  text-shadow: none;
+}
+
 /* Adds padding to all sections */
 section {
   padding: 60px;
@@ -90,6 +105,8 @@ section {
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: flex-start;
+  background-attachment: fixed;
+  background-position: 80%;
 }
 
 /* Hero CTA Style*/
@@ -109,9 +126,24 @@ section {
   color: #fce138;
 }
 
+header h1 {
+  /* add alongside your existing declarations */
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header nav ul li a {
+  /* and here */
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.hero-cta h2 {
+  /* and here */
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
 /* Hero Form Style */
 .hero-form{
-  background-color: #fce138;
+  background-color: rgba(252, 225, 56, 0.8);
   padding: 20px;
   color: #024e76;
   border-style: solid;
@@ -119,6 +151,8 @@ section {
   border-color: #024e76;
   width: 40%;
   margin: 3.5%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
 }
 
 /* Change text for h3 */
@@ -141,6 +175,14 @@ section {
   color: #024e76;
   width: 100%;
   margin-bottom: 15px;
+  border-radius: 10px;
+  background-color: rgba(255,255,255, 0.75);
+}
+
+/* create a new rule for focus state */
+.form-input:focus {
+  background-color: rgba(255,255,255, 1);
+  outline: none;
 }
 
 /* Spacing for radio buttons */
@@ -155,6 +197,11 @@ section {
   border: none;
   padding: 10px 20px;
   font-size: 16px;
+  border-radius: 10px;
+}
+
+.hero-form button:hover {
+  background-color: #39a6b2;  
 }
 
  /* Style p in intro */
@@ -184,11 +231,14 @@ section {
   margin: 50px auto;
   padding-bottom: 50px;
   width: 80%;
-  border-bottom: 1px solid #39a6b2;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+}
+
+.step:not(:last-child) {
+  border-bottom: 1px solid #39a6b2;
 }
 
 /* Style step-text paragraph */
@@ -344,6 +394,14 @@ section {
   width: 100%;
   margin-bottom: 15px;
   margin-top: 5px;
+  border-radius: 10px;
+  background-color: rgba(255,255,255, 0.75);
+}
+
+/* create a new css rule for focus state */
+.contact-form input:focus, .contact-form textarea:focus {
+  background-color: rgba(255,255,255, 1);
+  outline: none;
 }
 
 /* style for button */
@@ -355,6 +413,12 @@ section {
   text-align: center;
   padding: 15px 0;
   font-size: 16px;
+  border-radius: 10px;
+}
+
+.contact-form button:hover {
+  color: #fce138;
+  background: #39a6b2;
 }
 
 /* color change for link */
@@ -401,6 +465,7 @@ footer a {
     /* this will be applied on any screen smaller than 980px */
     padding-bottom: 0;
     justify-content: center;
+    position: relative;
   }
 
   header h1 a {
